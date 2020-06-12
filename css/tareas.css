@@ -1,0 +1,70 @@
+.lista-tareas{
+    border: solid 2px #eee;
+    border-radius: 4px;
+}
+.contenedor{
+    padding: 10px;
+}
+#tareas,#crear{
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 2px #eee;
+}
+#tareas{
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.cuentas{
+    text-align: center;
+    border: solid 2px #eee;
+    border-radius: 4px;
+    width: 300px;
+    padding: 10px;
+}
+label{
+    color: rgb(197, 21, 21);
+    font-family: cursive;
+    text-shadow: 2px 4px 6px #333;
+    text-align: center;
+}
+input:focus{
+    outline: 0px;
+}
+#crear{
+    position: relative;
+    left: 2px;
+    outline: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+#crear:active{
+    transform: scale(0.9, 0.9);
+}
+.works{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#out{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hecho{
+    text-decoration: line-through black;
+}
+
+.modal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #333;
+    padding: 50px;
+    top: 2em;
+    left: 2em;
+    border-radius: 8px;
+}

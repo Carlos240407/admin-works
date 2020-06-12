@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tareas.css">
+    <title>LISTA DE TAREAS</title>
+    <script></script>
+</head>
+<body>
+    <div class="container">
+        <div class="margenes-teclado">
+            <input class="display" value="0" type="text" id="display">
+            <div class="teclado">
+                <div class="btn" id="7">7</div>
+                <div class="btn" id="8">8</div>
+                <div class="btn" id="9">9</div>
+                <div class="btn" id="borrado" title="Borrar Todo">C</div>
+                <div class="btn" id="6">6</div>
+                <div class="btn" id="5">5</div>
+                <div class="btn" id="4">4</div>
+                <div class="btn" id="suma" title="Sumar">+</div>
+                <div class="btn" id="1">1</div>
+                <div class="btn" id="2">2</div>
+                <div class="btn" id="3">3</div>
+                <div class="btn" id="resta" title="Restar">-</div>
+                <div class="btn" id="punto">.</div>
+                <div class="btn" id="0">0</div>
+                <div class="btn" id="potencia" title="Potencia">(&#708;)</div>
+                <div class="btn" id="por" title="Multiplicar">*</div>
+                <div class="btn" id="raiz" title="Raiz Cuadrada">&#8730;</div>
+                <div class="btn" id="porcentaje" title="Porcentajes">%</div>
+                <div class="btn" id="divide" title="Dividir">/</div>
+                <div class="btn" id="pi" title="Pi">π</div>
+                <div class="btn" id="igual" title="Ver Resultado">&#61;</div>
+            </div>
+        </div>
+        <div class="cuentas">
+            <label for="salida">HISTORIAL</label>
+            <div class="informacion" id="history">
+                aqui puedes ver el historial de </br>
+                operaciones
+            </div>
+        </div>
+        <div class="lista-tareas">
+            <div class="contenedor">
+                <label for="titulo">LISTA DE TAREAS</label>
+                <div class="works">
+                    <input type="text" id="tareas" placeholder="ej: llamar a alguien" onkeypress="validar(event)">
+                    <button id="crear" class="btn">CREAR</button>
+                </div>
+                <div class="salida" id="out">
+                    <div id="alerta"></div>
+                </div>
+            </div>
+        </div>
+        <footer>&copy; 2020 derechos reservados || desarrollado por <strong>carlos alberto guzmán</strong></footer>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/tareas.js"></script>
+</body>
+</html>
