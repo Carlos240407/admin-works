@@ -2,7 +2,6 @@ body{
     box-sizing: border-box;
     margin: auto;
     font-size: 22px;
-    padding: 5pc;
 }
 .contenedor{
     display: flex;

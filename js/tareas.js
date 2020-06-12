@@ -22,10 +22,9 @@ crear.addEventListener('click', () => {
             })
         });
     }else{
-        // creadorTareas.style.backgroundColor = 'black';
-        document.getElementById('tareas').value = 'INGRESE UNA TAREA';
+        alert('ingrese una tarea'.toUpperCase(''));
     }
-
+    console.log(as)
 })
 function validar(e) {
     var tecla = (document.all) ? e.keyCode : e.which;
@@ -46,7 +45,7 @@ function validar(e) {
                 })
             });
         } else {
-            alert('Primero ingrese una tarea')
+            alert('ingrese una tarea'.toUpperCase(''))
         }
     }
 }
