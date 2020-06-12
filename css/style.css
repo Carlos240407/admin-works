@@ -21,7 +21,7 @@ body{
 }
 .darkMode{
     position: relative;
-    left: 1em;
+    /* left: 1em; */
     text-transform: capitalize;
 }
 .darkMode:active{
@@ -33,12 +33,12 @@ body{
 }
 .container{
     position: relative;
-    left: 1em;
+    /* left: 1em; */
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap:1em ;
     justify-content: center;
-    background-color: rgb(26, 187, 236);
+    background-color: rgb(17, 196, 228);
     padding: 15px;
     border: solid 20px #eeeeee;
     border-radius: 10px;
@@ -123,6 +123,60 @@ footer{
     text-align: center;
     text-transform: capitalize;
 }
+/* responsive */
+@media only screen and (max-width:320px){
+    .darkMode{
+        width: 93% !important;
+        font-size: 18px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+    }
+    .display{
+        grid-area: 1/1 / span 1 / span 4 !important;
+        width: 93%;
+    }
+    .teclado{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .teclado div{
+        width: 51px;
+        margin-top: 10px;
+        background-color: #eee;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .teclado div{
+        padding: 0px !important;
+        border: solid 1px #eeedef;
+        text-align: center;
+    }
+    #igual{
+        grid-area: 6/1 / span 1 / span 4 !important;
+        width: 99%;
+    }
+    
+    .teclado div:hover{
+        opacity: 0.9;
+        background-color: rgb(204, 199, 199);
+        cursor: pointer;
+    }
+    .cuentas{
+        text-align: center;
+        border: solid 2px #eee;
+        border-radius: 6px !important;
+        padding: 10px;
+        max-width: 90%;
+        font-size: 16px;
+    }
+    footer{
+        font-size: 15px !important;
+    }
+}
+
 @media only screen and (max-width:680px){
     .container{
         display: flex;
@@ -133,17 +187,41 @@ footer{
         position: relative;
         margin-top: 20px;
     }
-    .contenedor{
-        padding: 20px;
-    }
     .darkMode{
         width: 95%;
         left: 0px;
     }
     .cuentas{
-        width: 93% !important;
+        width: 96% !important;
     }
     footer{
         font-size: 16px;
     }
 }
+@media only screen and (max-width:980px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+    }
+    .container .cuentas, .lista-tareas{
+        position: relative;
+        margin-top: 20px;
+    }
+    #tareas{
+        width: 100% !important;
+        border: solid 2px red;
+    }
+    .darkMode{
+        width: 97.6%;
+        left: 0px;
+    }
+    .cuentas{
+        width: 97.3% !important;
+    }
+    footer{
+        font-size: 16px;
+    }
+}
+
+/* responsive */

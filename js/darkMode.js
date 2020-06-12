@@ -28,7 +28,7 @@ function darkMode(){
 }
 
 function exitDarkMode(){
-    container.style.backgroundColor = 'rgb(26, 187, 236)';
+    container.style.backgroundColor = 'rgb(17, 196, 228)';
     active.style.backgroundColor = '#333';
     active.style.color = '#fff';
     active.style.border = 'solid 1px #fff';

@@ -24,7 +24,6 @@ crear.addEventListener('click', () => {
     }else{
         alert('ingrese una tarea'.toUpperCase(''));
     }
-    console.log(as)
 })
 function validar(e) {
     var tecla = (document.all) ? e.keyCode : e.which;
