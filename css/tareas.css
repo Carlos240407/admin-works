@@ -5,11 +5,6 @@
 .contenedor{
     padding: 10px;
 }
-#tareas,#crear{
-    padding: 10px;
-    border-radius: 8px;
-    border: solid 2px #eee;
-}
 #tareas{
     font-size: 18px;
     text-transform: capitalize;
@@ -17,30 +12,21 @@
 }
 .cuentas{
     text-align: center;
-    border: solid 2px #eee;
+    border: solid 2px #D9D9D9;
     border-radius: 4px;
     width: 300px;
     padding: 10px;
 }
-label{
-    color: rgb(197, 21, 21);
+/* label{
+    color: #FF6600;
     font-family: cursive;
     text-shadow: 2px 4px 6px #333;
     text-align: center;
-}
+} */
 input:focus{
-    outline: 0px;
+    outline: none;
 }
-#crear{
-    position: relative;
-    left: 2px;
-    outline: 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    cursor: pointer;
-}
-#crear:active{
-    transform: scale(0.9, 0.9);
-}
+
 .works{
     display: flex;
     flex-wrap: nowrap;
@@ -56,15 +42,105 @@ input:focus{
     text-decoration: line-through black;
 }
 
-.modal{
-    position: relative;
+/* tareas */
+.todo{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+.todo form{
     display: flex;
     justify-content: center;
+}
+
+.todo input[type="text"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    text-align: center;
+    color: #5E6D70;
+}
+
+
+input[type="text"]:active{
+    /* width: 400px; */
+    outline: none;
+}
+#crear{
+    width: 80px;
+    height: 40px;
+    outline: none;
+    background-color:#00D6A4;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    color: #f2f2f2;
+    font-weight: 500;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+#crear:active{
+    transform: scale(0.98);
+    outline: none;
+}
+.work{
+    background-color: #4e4d4d;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+
+.borde{
+    box-sizing: border-box;
+    border: solid 1px #1b1b1b;
+    padding: 10px;
+    margin: 10px 0;
+    color: #ededed;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: red;
-    color: #333;
-    padding: 50px;
-    top: 2em;
-    left: 2em;
-    border-radius: 8px;
+
+}
+
+.edit{
+    background-color:  #3c3575;
+}
+.edit:hover{
+    background-color: #FF5349;
+}
+.check{
+    background-color: #FF6600;
+}
+.check:hover{
+    background-color: #33B1E3;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+}   
+
+.btn{
+    border: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.btn:active{
+    transform: scale(0.98);
 }
